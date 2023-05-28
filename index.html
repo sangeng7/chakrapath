@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.pto').bxSlider();
+        });
+    </script>
+    
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .a {
+            background-color: #333;
+            height: 35px;
+            color: white;
+            font-size: 14px;
+            padding: 6px 2px 6px 180px;
+        }
+
+        .bb {
+            width: 75%;
+            margin: auto;
+
+        }
+
+        .b {
+            background-color: white;
+            height: 245px;
+            border-bottom: 2px solid #333;
+            width: 100%;
+            padding: 15px 30px;
+        }
+
+        .b_a img {
+            width: 100%;
+        }
+
+        .b_b {
+            display: flex;
+
+        }
+
+        .b_left {
+            margin-top: 38px;
+        }
+
+        .b_mid {
+            margin: 49px 33px 29px 20px;
+        }
+
+        .b_mid li {
+            text-decoration: none;
+            display: inline;
+            padding-left: 33px;
+        }
+
+        .b_right {
+            display: flex;
+        }
+
+        .b3 input {
+            margin-top: 37px;
+            background-color: #ededed;
+            height: 42px;
+            width: 264px;
+            border-radius: 40px;
+            padding-left: 20px;
+        }
+
+        .b4 {
+            margin: 47px 0px 0px 10px;
+        }
+
+        .b4 a {
+            text-decoration: none;
+            color: white;
+            background-color: #99060b;
+            padding: 10px 18px;
+            border-radius: 40px;
+            font-size: 20px;
+        }
+
+        nav {
+            height: 70px;
+            border-bottom: 2px solid #333333;
+            background-color: white;
+            padding: 22px 209px
+        }
+
+        nav ul {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: #707070;
+        }
+
+        .main {
+            background-color: #e1e3e4;
+            padding: 15px 207px;
+            height: 16000px;
+        }
+
+        .box1 {
+            border-top: 3px solid #99060b;
+            background-color: #fff;
+            height: 855px;
+            padding: 22px 9px;
+        }
+
+        .box1 h2 {
+            font-size: 41px;
+            text-align: center;
+        }
+
+        .box1 img {
+            width: 800px;
+            height: 600px;
+            margin: 20px 117px 0px 117px;
+        }
+
+        .box1 p {
+            margin: 20px 20px;
+            font-size: 15px;
+        }
+
+        .box2 {
+            border-top: 3px solid #99060b;
+            background-color: #fff;
+            height: 795px;
+            padding: 22px 9px;
+            margin-top: 30px;
+        }
+
+        .box2 h2 {
+            font-size: 41px;
+            text-align: center;
+        }
+
+        .box2 img {
+            width: 800px;
+            height: 600px;
+            margin: 20px 117px 0px 117px;
+        }
+
+        .box2 p {
+            margin: 20px 20px;
+            font-size: 15px;
+        }
+
+        .box3 {
+            border-top: 3px solid #99060b;
+            background-color: #fff;
+            height: 795px;
+            padding: 22px 9px;
+            margin-top: 30px;
+        }
+
+        .box3 h2 {
+            font-size: 41px;
+            text-align: center;
+        }
+
+        .box3 img {
+            width: 800px;
+            height: 600px;
+            margin: 20px 117px 0px 117px;
+        }
+
+        .box3 p {
+            margin: 20px 20px;
+            font-size: 15px;
+        }
+
+        .box4 {
+            border-top: 3px solid #99060b;
+            background-color: #fff;
+            height: 795px;
+            padding: 22px 9px;
+            margin-top: 30px;
+
+        }
+
+        .box4 h2 {
+            font-size: 41px;
+            text-align: center;
+        }
+
+        .box4 img {
+            width: 800px;
+            height: 600px;
+            margin: 20px 117px 0px 117px;
+        }
+
+        .box4 p {
+            margin: 20px 20px;
+            font-size: 15px;
+        }
+
+        .box5 {
+            display: flex;
+            padding-top: 7px;
+            margin-top: 25px;
+        }
+
+        .l1 {
+            justify-content: start;
+            width: 56%;
+            border-top: 3px solid #99060b;
+        }
+
+        .l1_top {
+            background-color: #99060b;
+            border-radius: 0px 50px 50px 0px;
+            padding: 13px 15px 25px 15px;
+            color: white;
+            margin: 3px 0px 10px 0px;
+        }
+
+        .l1_down {
+            background-color: #fff;
+            padding: 15px 15px 25px 15px;
+
+        }
+
+        .l1_down p {
+            margin-top: 14px;
+            font-size: 14px;
+        }
+
+        .r1 {
+            justify-content: end;
+            width: 42%;
+            border-top: 3px solid #99060b;
+            margin-left: auto;
+        }
+
+        .r1_top {
+            background-color: #99060b;
+            border-radius: 0px 50px 50px 0px;
+            padding: 13px 15px 25px 15px;
+            color: white;
+            margin: 3px 0px 10px 0px;
+            width: 140px;
+            height: 60px;
+        }
+
+        .d1 {
+            padding: 12px;
+            margin-top: 10px;
+            display: flex;
+            margin-bottom: 7px;
+            background-color: #fff;
+        }
+
+        .d1 p {
+            margin-left: 13px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-top: 18px;
+        }
+
+        .d2 {
+            padding: 12px;
+            display: flex;
+            margin-bottom: 7px;
+            background-color: #fff;
+        }
+
+        .d2 p {
+            margin-left: 13px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-top: 18px;
+        }
+
+        .d3 {
+            padding: 12px;
+            display: flex;
+            margin-bottom: 7px;
+            background-color: #fff;
+        }
+
+        .d3 p {
+            margin-left: 13px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-top: 18px;
+        }
+
+        .d4 {
+            padding: 12px;
+            display: flex;
+            background-color: #fff;
+        }
+
+        .d4 p {
+            margin-left: 13px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-top: 18px;
+        }
+
+        .box6 {
+            border-top: 3px solid #99060b;
+            margin-top: 30px;
+
+        }
+
+        .box6_a {
+            background-color: #99060b;
+            border-radius: 0px 50px 50px 0px;
+            padding: 13px 15px 25px 35px;
+            color: white;
+            margin: 3px 0px 10px 0px;
+            width: 140px;
+            height: 60px;
+        }
+
+        .box6_aa,
+        .box6_ab {
+            background-color: #99060b;
+            border-radius: 0px 50px 50px 0px;
+            padding: 13px 15px 25px 35px;
+            color: white;
+            margin: 3px 0px 10px 0px;
+            width: 200px;
+            height: 60px;
+        }
+
+        .box6_b {
+            display: flex;
+            margin-top: 0px;
+            justify-content: space-between;
+            gap: 30px;
+            height: 380px;
+        }
+
+        .box6_b img {
+            height: 200px;
+        }
+
+        .bb1,
+        .bb2,
+        .bb3 {
+            background-color: #fff;
+            padding: 15px 15px 20px 15px;
+        }
+
+        .bb1,
+        .bb2,
+        .bb3,
+        p {
+            font-size: 15px;
+            margin-top: 20px;
+        }
+
+        .bb1,
+        .bb2,
+        .bb3,
+        img {
+            margin-bottom: 4px;
+        }
+
+
+        .box7 {
+            border-top: 3px solid #99060b;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+        .box7_a {
+            background-color: #99060b;
+            border-radius: 0px 50px 50px 0px;
+            padding: 13px 15px 25px 35px;
+            color: white;
+            margin: 3px 0px 10px 0px;
+            width: 140px;
+            height: 60px;
+        }
+
+        .box_7aa {
+            display: flex;
+            gap: 25px;
+        }
+
+        .l1_left {
+            width: 58%;
+            background-color: #fff;
+            padding: 15px;
+            justify-content: start;
+        }
+
+        .l1_right {
+            width: 40%;
+            padding: 15px;
+            justify-content: end;
+            margin-top: -25px;
+        }
+
+        .l1_right p {
+            margin-left: 10px;
+        }
+
+        .right1,
+        .right2,
+        .right3 {
+            background-color: #fff;
+            height: 120px;
+            padding: 15px;
+            display: flex;
+        }
+
+        .right1,
+        .right2,
+        .right3,
+        img {
+            margin-top: 0px;
+        }
+
+        .right1,
+        .right2,
+        .right3,
+        p {
+            margin-top: 10px;
+            margin-left: 0px;
+        }
+
+        .box_8 {
+            width: 70%;
+            background-color: #fff;
+            padding: 15px;
+        }
+
+        .box_8 p {
+            margin-bottom: 20px;
+        }
+
+        .box_8aa {
+            display: flex;
+            margin-top: 15px;
+            gap: 22px;
+        }
+
+        .box8_left,
+        .box8_right {
+            width: 34%;
+            background-color: #fff;
+            padding: 15px;
+        }
+
+        .abc {
+            display: flex;
+
+        }
+
+        .pto {
+            z-index: 1;
+        }
+
+        .foot {
+            background-color: rgba(0, 0, 0, .5);
+            color: #fff;
+            height: 70px;
+            position: relative;
+            padding: 20px;
+            margin-top: -130px;
+            z-index: 2;
+            
+        }
+        .bottom{
+            margin-bottom: -39px;
+        }
+
+        .last {
+            margin-top: 82px;
+            background-color: #fff;
+            padding: 18px 32px 18px 45px;
+            display: flex;
+            height: 250px;
+           
+        }
+        .last_left{
+            width: 30%;
+        }
+        .last_mid{
+            width: 30%;
+        }
+        .last_right{
+            width: 30%;
+        }
+        .last_left p{
+            font-style: italic;
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+        }
+        .last_mid p{
+            
+            font-size: 17px;
+            
+            color: black;
+        }
+        .last_right p{
+            font-weight: bold;
+            font-size: 17px;
+            color:#99060b
+        }
+        footer{
+            text-align: center;
+            background-color: #261409;
+            color: #fff;
+            height: 40px;
+            padding-top: 1px;
+        }
+    
+    </style>
+
+</head>
+
+<body>
+    <div class="page">
+        <section class="heading">
+        <header>
+            <div class="a">
+                <p>२६ मंसिर, २०७९Monday, December 12, 2022, 11:27 AM</p>
+            </div>
+            <div class="b">
+                <div class="bb">
+                    <div class="b_a">
+                        <img src="media/head.gif">
+                    </div>
+                    <div class="b_b">
+                        <div class="b_left">
+                            <img src="media/logo.png">
+                        </div>
+                        <div class="b_mid">
+                            <ul>
+                                <li type="none">आवरण</li>
+                                <li type="none">भिडियो</li>
+                                <li type="none">ग्यालरी </li>
+                                <li type="none">नयाँसूचना</li>
+                            </ul>
+                        </div>
+                        <div class="b_right">
+                            <div class="b3">
+                                <input type="text" placeholder="खोज्नुहोस्" class="b1">
+                            </div>
+                            <div class="b4">
+                                <a href="#">ENGLISH</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        </section>
+        <section class="navigation">
+        <nav>
+            <ul>
+                <li type="none"><a href="">राजनीति</a></li>
+                <li type="none"><a href="">प्रशासन</a></li>
+                <li type="none"><a href="">समाज</a></li>
+                <li type="none"><a href="">अपराध</a></li>
+                <li type="none"><a href="">बिचार</a></li>
+                <li type="none"><a href="">अन्तरवार्ता</a></li>
+                <li type="none"><a href="">अर्थ</a></li>
+                <li type="none"><a href="">विश्व</a></li>
+                <li type="none"><a href="">खेल</a></li>
+                <li type="none"><a href="">कला/साहित्य</a></li>
+                <li type="none"><a href="">सम्पादकीय</a></li>
+                <li type="none"><a href="">सूचनाप्रविधि</a></li>
+                <li type="none"><a href="">स्वास्थ्य,शिक्षा</a></li>
+                <li type="none"><a href="">अध्यात्म/दर्शन</a></li>
+            </ul>
+        </nav>
+        </section>
+        <div class="main">
+            <section>
+            <div class="box1">
+                <h2>सत्ता सौदाबाजीका लागि अदालतमा विचाराधिन मुद्दा फिर्ता गर्दै सरकार</h2>
+                <img src="media/bdy.jpg">
+                <p>काठडमौं । सरकारले सत्ता स्वार्थका लागि अदालतमा विचाराधीन मुद्दा फिर्ता लिन मिल्ने गरी अध्यादेश
+                    ल्याउने निर्णय गरेको छ । सरकारले रेशम चौधरी, सीके राउतका कार्यकर्तामाथि अन्याय भएको निष्कर्षमा होइन
+                    की राउतसँग भएका ६ र चौधरीसँग रहेका ४ सांसद तानेर सत्ताको सैदावाजीका लागि बहुमत र</p>
+            </div>
+            </section>
+            <section>
+            <div class="box2">
+                <h2>बढ्यो चिसो : जुम्लामा माइनस ४.५, काठमाडौंमा ६ डिग्री</h2>
+                <img src="media/a.jpg">
+                <p>काठमाडौं - देशभर क्रमिक रुपमा तापक्रम घटिरहेको मौसम पूर्वानुमान महाशाखाले जनाएको छ । सबैभन्दा बढी
+                    चिसो जुम्ला र मुस्ताङमा देखिएको छ । जुम्लामा न्यूनतम तापक्रम माइनस ४.५ डिग्री सेल्सियस देखिएको छ भने
+                    जोमसोममा पनि न्यूनतम तापक्रम माइनस ४ डिग्री सेल्सियस पुगेको हो । काठमाडौंको न्यूनतम तापक्रम घटेर ६ ड
+                </p>
+            </div>
+            </section>
+            <section>
+            <div class="box3">
+                <h2>बालुवाटार जग्गा प्रकरण मुद्दाको सुनुवाइ हुँदै</h2>
+                <img src="media/d.jpg">
+                <p>कठमाडौं । पूर्वउपप्रधानमन्त्री एवं नेपाली कांग्रेसका नेता विजयकुमार गच्छदारमाथिको भ्रष्टाचार सम्बन्धी
+                    वालुवाटार जग्गा प्रकरणको मुद्दा विशेष अदालतमा अहिले सुनुवाइ भइरहेको छ । ललिता निवासको ११३ रोपनी
+                    सरकारी जग्गा व्यक्तिको बनाई भ्रष्टाचार गरेको आरोप गच्छदारमाथि छ । गच्छदारविरुद्ध ९ करोड ६५ लाख ७६
+                    हजा
+                </p>
+            </div>
+            </section>
+            <section>
+            <div class="box4">
+                <h2>बढ्यो चिसो : जुम्लामा माइनस ४.५, काठमाडौंमा ६ डिग्री</h2>
+                <img src="media/b.jpg">
+                <p>काठमाडौं - देशभर क्रमिक रुपमा तापक्रम घटिरहेको मौसम पूर्वानुमान महाशाखाले जनाएको छ । सबैभन्दा बढी
+                    चिसो जुम्ला र मुस्ताङमा देखिएको छ । जुम्लामा न्यूनतम तापक्रम माइनस ४.५ डिग्री सेल्सियस देखिएको छ भने
+                    जोमसोममा पनि न्यूनतम तापक्रम माइनस ४ डिग्री सेल्सियस पुगेको हो । काठमाडौंको न्यूनतम तापक्रम घटेर ६ ड
+                </p>
+            </div>
+            </section>
+            <section>
+            <div class="box5">
+                <div class="l1">
+                    <div class="l1_top">
+                        <h2>सिद्धार्थनगरमा चल्याे डाेजर,अतिक्रमित संरचना हटाइँदै ( तस्बीरसहित)</h2>
+                    </div>
+                    <div class="l1_down">
+                        <img src="media/e.jpg" width="100%" height="350px">
+                        <p>भैरहवा । सार्वजनिक जग्गा अतिक्रमण गरी निर्माण गरिएका संरचनामा रुपन्देहीको सिद्धार्थनगर...</p>
+                    </div>
+                </div>
+                <div class="r1">
+                    <div class="r1_top">
+                        <h2>भर्खरै</h2>
+                    </div>
+                    <div class="r1_down">
+                        <div class="d1">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20220243732_mahanagar.jpeg"
+                                width="105px" height="80px">
+                            <p>
+                                २९ मंसिरमा २८ औँ महानगर दिवस मनाउँदै काठमाडौं महानगर</p>
+                        </div>
+                        <div class="d2">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20221329002_wire-kathmandu-taar-59939cda3f48c8.64870595.jpg"
+                                width="105px" height="80px">
+                            <p>
+                                २९ मंसिरमा २८ औँ महानगर दिवस मनाउँदै काठमाडौं महानगर</p>
+                        </div>
+                        <div class="d3">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20221517063_niwachan_nirbachan_chunav_chunab_ballet_pradesh_pratinidhi_1661333003.jpg"
+                                width="105px" height="80px">
+                            <p>
+                                २९ मंसिरमा २८ औँ महानगर दिवस मनाउँदै काठमाडौं महानगर</p>
+                        </div>
+                        <div class="d4">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20220102786_1580906234gacchadar.jpg"
+                                width="105px" height="80px">
+                            <p>
+                                २९ मंसिरमा २८ औँ महानगर दिवस मनाउँदै काठमाडौं महानगर</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section>
+                <div class="box6">
+                    <div class="box6_a">
+                        <h2> ट्रेन्डिङ</h2>
+                    </div>
+                    <div class="box6_b">
+                        <div class="bb bb1">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20222017121_ghanshyam-prabhu.jpg"
+                                width="100%" height="160px">
+                            <h4>पार्टीमाथि घात गर्ने घनश्याम र प्रभुसहित १४ जना एमालेबाट आउट</h4>
+                            <p>काठमाडौँ । चुनावका बेला एमालेमाथि घात गर्ने एमाले स्थायी कमिटी</p>
+                        </div>
+                        <div class="bb bb2">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20223657459_sachibalaya5-768x512.jpg"
+                                width="100%" height="160px">
+                            <h4>पार्टीमाथि घात गर्ने घनश्याम र प्रभुसहित १४ जना एमालेबाट आउट</h4>
+                            <p>काठमाडौँ । चुनावका बेला एमालेमाथि घात गर्ने एमाले स्थायी कमिटी</p>
+                        </div>
+                        <div class="bb bb3">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20222541924_thumb.jfif" width="100%"
+                                height="160px">
+                            <h4>पार्टीमाथि घात गर्ने घनश्याम र प्रभुसहित १४ जना एमालेबाट आउट</h4>
+                            <p>काठमाडौँ । चुनावका बेला एमालेमाथि घात गर्ने एमाले स्थायी कमिटी</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="box7">
+                    <div class="box7_a">
+                        <h2> ट्रेन्डिङ</h2>
+                    </div>
+                    <div class="box_7aa">
+                        <div class="l1_left">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20222229059_319175734_1188782691746695_793866990146668614_n.jpg"
+                                height="350px" width="100%">
+                            <h1>यःमरिको स्वाद चाख्दै रमाए विदेशी पर्यटक</h1>
+                            <p>​​​​​​​​​​​​​​भक्तपुर । अष्ट्रेलियाबाट नेपाल भ्रमणमा आउनुभएकी कार्टलक्स र उहाँका पति...
+                            </p>
+                        </div>
+                        <div class="l1_right">
+                            <div class="right1">
+                                <img src="https://api.chakrapath.com/Content/coverimage/20225850980_kcc.jpg"
+                                    width="90px" height="80px">
+                                <p>किसानलाई ‘डेबिट’ र ‘क्रेडिट’ कार्ड
+                                    ​​​​​​​तुलसीपुर । दाङ तुलसीपुरका किसानलाई डेबिट र क्रेडिट कार्ड वितरण...</p>
+                            </div>
+                            <div class="right2">
+                                <img src="https://api.chakrapath.com/Content/coverimage/20221253143_ymunashwori.jpg"
+                                    width="90px" height="80px">
+                                <p>किसानलाई ‘डेबिट’ र ‘क्रेडिट’ कार्ड
+                                    ​​​​​​​तुलसीपुर । दाङ तुलसीपुरका किसानलाई डेबिट र क्रेडिट कार्ड वितरण...</p>
+                            </div>
+                            <div class="right3">
+                                <img src="https://api.chakrapath.com/Content/coverimage/20222813247_morocco-beat-portugal-1-0-to-reach-semi-finals.jpeg"
+                                    width="90px" height="80px">
+                                <p>किसानलाई ‘डेबिट’ र ‘क्रेडिट’ कार्ड
+                                    ​​​​​​​तुलसीपुर । दाङ तुलसीपुरका किसानलाई डेबिट र क्रेडिट कार्ड वितरण...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="box7">
+                    <div class="box7_a">
+                        <h2>बिचार</h2>
+                    </div>
+                    <div class="box_8">
+                        <img src="https://api.chakrapath.com/Content/coverimage/20224359511_resham_chaudhari_3_1600010930.jpg"
+                            width="100%">
+                        <div class="box_8a">
+                            <h3>रेशम चौधरीलाई आममाफी दिन सर्वाेच्चको निर्देशन र नजीर नै बाधक</h3>
+                            <p>कुनै बेला रेशमको वकिलको हैसियतले मैले उनको मुद्दा सर्वोच्च अदालतमा...</p>
+                        </div>
+                    </div>
+                    <div class="box_8aa">
+                        <div class="box8_left">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20221608373_20223252526_education-ma-bhasah.png"
+                                width="100%">
+                            <h4>गठबन्धनको राजनीतिः काम कुरो एकातिर कुम्लो बोकी </h4>
+                            <p>गठबन्धनमा रहेका दलका नेताहरू दिनहुँ बालुवाटारमा सरकार बनाउने कचहरीमा छन्।... </p>
+                        </div>
+                        <div class="box8_right">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20224359511_resham_chaudhari_3_1600010930.jpg"
+                                width="100%" height="183px">
+                            <h4>रेशम चौधरीलाई आममाफी दिन सर्वाेच्चको निर्देशन र नजीर नै बाधक </h4>
+                            <p>कुनै बेला रेशमको वकिलको हैसियतले मैले उनको मुद्दा सर्वोच्च अदालतमा...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="box6">
+                    <div class="box6_a">
+                        <h2> ट्रेन्डिङ</h2>
+                    </div>
+                    <div class="box6_b">
+                        <div class="bb bb1">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20223327595_ipo.jpg" width="100%"
+                                height="160px">
+                            <h4>एशियन हाइड्रोपावरको आइपिओ खुला</h4>
+                            <p>काठमाडौँ । एशियन हाइड्रोपावर कम्पनी लिमिटेडले स्थानीय तथा वैदेशिक रोजगारीमा...</p>
+                        </div>
+                        <div class="bb bb2">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20225316813_gold-800x510.jpg"
+                                width="100%" height="160px">
+                            <h4>सुनको मूल्य प्रतितोला रु एक लाख</h4>
+                            <p>काठमाडौँ । चुनावका बेला एमालेमाथि घात गर्ने एमाले स्थायी कमिटी</p>
+                        </div>
+                        <div class="bb bb3">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20221026604_transmisan.jpg"
+                                width="100%" height="160px">
+                            <h4>पार्टीमाथि घात गर्ने घनश्याम र प्रभुसहित १४ जना एमालेबाट आउट</h4>
+                            <p>काठमाडौँ । नेपाली सुनचाँदी बजारमा आज छापावाल सुनको कारोबार मूल्य...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="box7">
+                    <div class="box7_a">
+                        <h2> समाज</h2>
+                    </div>
+                    <div class="box_7aa">
+                        <div class="l1_left">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20222406756_newskarkahna-news421940.jpg"
+                                height="350px" width="100%">
+                            <h2>साढे तीन सय किलो गाँजासहित ट्रक नियन्त्रण</h2>
+                            <p>​​​​​​​​​​​​​पर्सा ।​​​​​​​ ठोरी गाउँपालिका–३ स्थित ठुटेखोला इलाकाबाट सशस्त्र प्रहरीले
+                                करिब...
+                            </p>
+                        </div>
+                        <div class="l1_right">
+                            <div class="right1">
+                                <img src="https://api.chakrapath.com/Content/coverimage/20225850980_kcc.jpg"
+                                    width="90px" height="80px">
+
+
+                                <p>महोत्तरी ।​​​​​​​ महोत्तरी जिल्लाको मटिहानी नगरपालिका ७ स्थित परिक्रमा गाछी...</p>
+                            </div>
+                            <div class="right2">
+                                <img src="https://api.chakrapath.com/Content/coverimage/20221253143_ymunashwori.jpg"
+                                    width="90px" height="80px">
+                                <p>ढोरपाटन । बागलुङको ताराखोला गाउँपालिका-३ हिलको शिरमा खिउ बराह ताल प्रचारप्रसारको...
+                                </p>
+                            </div>
+                            <div class="right3">
+                                <img src="https://api.chakrapath.com/Content/coverimage/20222813247_morocco-beat-portugal-1-0-to-reach-semi-finals.jpeg"
+                                    width="90px" height="80px">
+                                <p>काठमाडौं । ​​​​​​दाङमा ट्याक्टरबाट खसेर एक जनाको मृत्यु भएको छ ।...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="box6">
+                    <div class="box6_a">
+                        <h2>खेल</h2>
+                    </div>
+                    <div class="box6_b">
+                        <div class="bb bb1">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20220739241_kylianmbappepsg042922169.jpg"
+                                width="100%" height="160px">
+                            <h4>एम्बाप्पे गोल्डेनबुटको दाबेदार</h4>
+                            <p>कतार विश्वकप २०२२ को ६४ मध्य ६० खेल पुरा भइसकेको छन् । प्रतियोगिता अन्त्यतीर आइपुग्दा
+                                यसको रोमाञ्चकता झन झन बढ्दै गइरहेको छ ।</p>
+                        </div>
+                        <div class="bb bb2">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20224507621_worldcup-argentina-vs-croatia_20221213073519.jpg"
+                                width="100%" height="160px">
+                            <h4>विश्वकप सेमिफाइनल : आज अर्जेन्टिना र क्रोएसिया भिड्दै</h4>
+                            <p>कतारमा जारी फिफा विश्वकपको सेमिफाइनलमा मंगलबार राति</p>
+                        </div>
+                        <div class="bb bb3">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20223647493_maxresdefault-1.jpg"
+                                width="100%" height="160px">
+                            <h4>फिफा विश्वकप: फाइनलमा स्थान बनाउन आज अर्जेन्टिना र क्रोएसिया सेमिफाइनलमा भिड्दै </h4>
+                            <p> फिफा विश्वकप २०२२ को सेमिफाइनलका खेलहरु आज मध्यरातबाट सुरु हुँदैछ ।</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="box7">
+                    <div class="box7_a">
+                        <h2>बिचार</h2>
+                    </div>
+                    <div class="box_8">
+                        <img src="https://api.chakrapath.com/Content/coverimage/20220834334_newskarkahna-news421930.jpg"
+                            width="100%">
+                        <div class="box_8a">
+                            <h3>अवैध मदिरा बोकेको गाडीसहित दुई जना पक्राउ</h3>
+                            <p>महोत्तरी ।​​​​​​​ महोत्तरी जिल्लाको मटिहानी नगरपालिका ७ स्थित परिक्रमा गाछी...</p>
+                        </div>
+                    </div>
+                    <div class="box_8aa">
+                        <div class="box8_left">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20223932917_thunuwa-farar.jpg"
+                                width="100%">
+                            <h4>प्रहरीकै सामुन्ने चक्कु प्रहार गरेर दुई युवक फरार</h4>
+                            <p>मकवानपुर - मकवानपुरको हेटौंडा उपमहानगरपालिका-२ मा चक्कु प्रहार गरेर दुई जना...</p>
+                        </div>
+                        <div class="box8_right">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20223814441_977609391tilotima-butwal.jpeg"
+                                width="100%" height="183px">
+                            <h4>नगरपालिकाका कर्मचारीमाथि कार्यकक्षमै हातपात </h4>
+                            <p>रुपन्देहीको तिलोत्तमा नगरपालिकामा अमिन पदमा कार्यरत ईश्वरी भण्डारीमाथि आफ्नै...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="box6">
+                    <div class="box6_a">
+                        <h2>खेल</h2>
+                    </div>
+                    <div class="box6_b">
+                        <div class="bb bb1">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20223744813_editoriallll.jpg"
+                                width="100%" height="200px">
+                            <h4>चुनाव आफैमा नेतृत्व निखार्ने र तिखार्ने अवसर हो </h4>
+                            <p>हामीले सुन्दै आएका छौँ, लोकतन्त्रको विकल्प लोकतन्त्र नै हो ।</p>
+                        </div>
+                        <div class="bb bb2">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20223744813_editoriallll.jpg"
+                                width="100%" height="200px">
+                            <h4>स्वच्छता, सुस्वास्थ्य, समृद्धि र सुखका लागि तिहारको शुभकामना !!</h4>
+                            <p>नेपालीहरूको दोस्रो ठुलो चाडका रूपमा मनाइने तिहार पर्व सुरु भएको छ ।</p>
+                        </div>
+                        <div class="bb bb3">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20223744813_editoriallll.jpg"
+                                width="100%" height="200px">
+                            <h4>पार्टीभित्रका समस्या समाधान गर ! लोकतन्त्रप्रति जनताको विश्वास जगाऊ ! </h4>
+                            <p>लोकतन्त्र राजनीतिक दलहरूका लागि मात्र होइन । </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="box7">
+                    <div class="box7_a">
+                        <h2> समाज</h2>
+                    </div>
+                    <div class="box_7aa">
+                        <div class="l1_left">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20221542429_swornim-wagle_20190128083748.jpg"
+                                height="350px" width="100%">
+                            <h2>भ्रष्टाचारविरुद्ध लेख्ने पत्रकारलाई २५ लाखको पुरस्कार</h2>
+                            <p> काठमाडौं - भ्रष्टाचारविरोधी नागरिकहरुको पहलमा २५ लाख बराबरको पत्रकारिता पुरस्कार
+                                स्थापना...
+                            </p>
+                        </div>
+                        <div class="l1_right">
+                            <div class="right1">
+                                <img src="https://api.chakrapath.com/Content/coverimage/20224929060_losapa-leader-768x457.jpg"
+                                    width="90px" height="80px">
+
+
+
+                                <p>काठमाडौं – पाँच दलीय सत्ता गठबन्धन नेतृत्वको सरकारमा लोकतान्त्रिक समाजवादी...</p>
+                            </div>
+                            <div class="right2">
+                                <img src="https://api.chakrapath.com/Content/coverimage/20220450365_newskarkahna-news421848.jpg"
+                                    width="90px" height="80px">
+                                <p>काठमाडौं। सरकारले मुलुकी फौजदारी कार्यविधि संहिता २०७४ लाई संशोधन गर्न अध्यादेश...
+                                </p>
+                            </div>
+                            <div class="right3">
+                                <img src="https://api.chakrapath.com/Content/coverimage/20225705115_kamalthapaa.jpg"
+                                    width="90px" height="80px">
+                                <p>काठमाडौँ - गम्भीर आपराधिक घटनामा संलग्नहरुलाई उन्मुक्ति दिने गरी शेरबहादुर...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="box6">
+                    <div class="box6_aa">
+                        <h2>अन्तरवार्ता</h2>
+                    </div>
+                    <div class="box6_b">
+                        <div class="bb bb1">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20224409373_resham.jpg" width="100%"
+                                height="200px">
+                            <h4>जनताको अदालतबाट मुक्ति पाइसक्यौँ तर राज्यले सम्बोधन गरेन : रेशम चौधरी </h4>
+                            <p>काठमाडाैं । नागरिक उन्मुक्ति पार्टीले यस पटकको निर्वाचनमा तीन सिटसहित...</p>
+                        </div>
+                        <div class="bb bb2">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20223531085_202212041530-57134b0e-3ef2-472d-8b59-67bf2c5ffaf9_medium.jpg"
+                                width="100%" height="160px">
+                            <h4>अन्तर्वार्ता : संसद्मा बहुमत पुर्याउन हामी नै निर्णायक हुन्छौँ– सीके राउत</h4>
+                            <p>काठमाडौँ । नेपाली जनताको लामो सङ्घर्ष र बलिदानको उपलब्धिका रुपमा...</p>
+                        </div>
+                        <div class="bb bb3">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20225947889_img-20221016-wa0001.jpg"
+                                width="100%" height="160px">
+                            <h4>जनताले एमालेले गरेका तमाम कामहरुलाई अनुमोदन गरेर बहुमतको सरकार बनाउन मतदान गर्नुहुनेछ :
+                                बालकृष्ण शिवाकोटी </h4>
+                            <p>​​​​​​​प्रतिनिधिसभा सदस्यमा तपाईले दोलखाबाट टिकट पाउनु भएको छ । सत्ता...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="box6">
+                    <div class="box6_a">
+                        <h2>प्रशासन</h2>
+                    </div>
+                    <div class="box6_b">
+                        <div class="bb bb1">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20225442517_muglin-narayanghat_rbjojh7t4k.jpg"
+                                width="100%" height="160px">
+                            <h4>नारायणगढ–मुग्लिन सडकमा दैनिक चार घण्टा सवारी रोकिने</h4>
+                            <p>चितवन । नारायणगढ मुग्लिन सडक खण्डमा दैनिक चार घण्टा सवारी...</p>
+                        </div>
+                        <div class="bb bb2">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20224523971_vote-5a0a64f9d006b3.66293332.jpg"
+                                width="100%" height="160px">
+                            <h4>थारु र मुस्लिमलाई मधेसी समुदायको सूचीबाट हटाउने निर्णय</h4>
+                            <p>काठमाडौं। मधेसी आयोगले थारु र मुस्लिमलाई मधेशी समुदायको सूचीबाट हटाउने निर्णय...</p>
+                        </div>
+                        <div class="bb bb3">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20222153198_electioncomission.jpg"
+                                width="100%" height="160px">
+                            <h4>निर्वाचन आयोगले आज समानुपातिकतर्फको अन्तिम सूची सार्वजनिक गर्ने</h4>
+                            <p>काठमाडौं । निर्वाचन आयोगले प्रतिनिधिसभा सदस्य तथा प्रदेशसभा सदस्य निर्वाचनको...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="box6">
+                    <div class="box6_ab">
+                        <h2>गाउँ / नगर</h2>
+                    </div>
+                    <div class="box6_b">
+                        <div class="bb bb1">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20224318075_download(2).jpg"
+                                width="100%">
+                            <h4>सुन्धाराको मूल धारा नै नष्ट गरिएको भन्दै काठमाडौँ महानगरद्वारा आपत्ति</h4>
+                            <p>काठमाडौँ । धरहरा पुनःनिर्माणको क्रममा सुन्धारामा पानी पठाउने मूलधारा नष्ट हुनेगरी...</p>
+                        </div>
+                        <div class="bb bb2">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20225204648_newskarkahna-news420810.jpg"
+                                width="100%">
+                            <h4>बुटवल उपमहानगरपालिकाकाे निर्णय : अस्पताल क्षेत्रमा गाडी रोक्न प्रतिबन्ध, राजमार्गका सबै
+                                टिकट काउन्टर बसपार्कमा</h4>
+                            <p>बुटवल । बुटवलको अस्पताल लाइन क्षेत्रमा गाडी रोक्न नपाइने भएको छ ।...</p>
+                        </div>
+                        <div class="bb bb3">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20220924526_newskarkahna-news418190.jpg"
+                                width="100%">
+                            <h4>सिद्धार्थनगर नगरपालिकाले सडक फुटपाथ अतिक्रमण हटाउँदै</h4>
+                            <p>भैरहवा । रुपन्देहीको सिद्धार्थनगर नगरपालिकाले सडक फुटपाथ अतिक्रमण हटाउन थालेको...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="box6">
+                    <div class="box6_aa">
+                        <h2>सूचना प्रविधि</h2>
+                    </div>
+                    <div class="box6_b">
+                        <div class="bb bb1">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20222957418_mobileeee.jpg"
+                                width="100%">
+                            <h4>दर्जन बढी गाउँमा टिप्दैन मोबाइलको नेटवर्क</h4>
+                            <p>भरतपुर । कञ्चनपुरबाट शिक्षण पेसाका लागि चितवनको इच्छाकामना गाउँपालिका–१ को...</p>
+                        </div>
+                        <div class="bb bb2">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20222838677_twins-born-from-embryos-frozen-30-years.jpg"
+                                width="100%">
+                            <h4>३० वर्ष पहिले चिस्याइएको भ्रुणबाट जुम्ल्याहा सन्तान</h4>
+                            <p>न्युयोर्क - अमेरिकामा ३० वर्षअघि फ्रिज गरिएको भ्रुणबाट जुम्ल्याहा शिशु जन्मिएका...</p>
+                        </div>
+                        <div class="bb bb3">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20223614371_iphone-14_render.jpg"
+                                width="100%">
+                            <h4>कोभिडमा बृद्धिसँगै मध्यचीनको आईफोन कारखानाको उत्पादन प्रभावित</h4>
+                            <p>बेइजिङ । ​​​​​​​कोभिड प्रतिबन्धले मध्यचीनको फक्सकनको विशाल आईफोन कारखानाको उत्पादन
+                                “अस्थायी...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="box6">
+                    <div class="box6_aa">
+                        <h2>स्वास्थ्य, शिक्षा</h2>
+                    </div>
+                    <div class="box6_b">
+                        <div class="bb bb1">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20222645546_tulsipur-dang.jpg"
+                                width="100%" height="160px">
+                            <h4>उपमहानगरकै जग्गा अतिक्रमणमा</h4>
+                            <p>दाङ । दाङ तुलसीपुर उपमहानगरपालिकाको नाममा १० बिघाभन्दा बढी जग्गा...</p>
+                        </div>
+                        <div class="bb bb2">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20221545305_download(32).jpg"
+                                width="100%" height="160px">
+                            <h4>काभ्रेमा रेबिज : नियन्त्रण गर्न खोप अभियान</h4>
+                            <p>काभ्रेपलाञ्चोक । काभ्रेको दक्षिणी क्षेत्र डाँडापारिस्थित महाभारत गाउँपालिकामा रेबिज
+                                रोगका...</p>
+                        </div>
+                        <div class="bb bb3">
+                            <img src="https://api.chakrapath.com/Content/coverimage/20221856714_coronaupdate1.jpg"
+                                width="100%" height="160px">
+                            <h4>थप एक जनामा कोरोना संक्रमण</h4>
+                            <p>काठमाडौँ । स्वास्थ्य तथा जनसंख्या मन्त्रालयले पछिल्लो २४ घण्टामा थप एक...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bottom">
+                <div class="box6">
+                    <div class="box6_a">
+                        <h2>ग्यालरी</h2>
+                    </div>
+                    <div class="pto">
+                        <img src="https://api.chakrapath.com/Content/coverimage/20220513694_newskarkahna-news410264.jpg"
+                            width="100%" height="600px">
+                        <img src="https://api.chakrapath.com/Content/coverimage/20220513694_newskarkahna-news410264.jpg"
+                            width="100%" height="600px">
+                    </div>
+                    <div class="foot">
+                        <h2>माइतीघरमा लैंगिक हिसाविरुद्ध सचेतनामूलक पर्फमेन्स आर्ट (फोटो फिचर)</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="last">
+                <div class="last_left">
+                    <p>नेपाली भाषाको यो पोर्टलले समाचार, विचार, मनोरञ्जन, खेल, विश्व, सूचना प्रविधि, भिडियो तथा जीवनका
+                        विभिन्न आयामका समाचार र विश्लेषणलाई समेट्छ।</p>
+                </div>
+                <div class="last_mid">
+                    <p>अध्यक्ष : डेगेन्द्र पाण्डे <br>
+                    प्रधान सम्पादक : तिला रुपा आचार्य</p>
+                </div>
+                <div class="last_right">
+                    <p>
+                        सम्पर्क ठेगाना <br>
+                        राजमोती मिडिया प्रा.लि. द्वारा सञ्चालित चक्रपथ डटकमका लागि <br>
+                        ठेगाना : कार्यालय :अनामनगर, काठमाडौं <br>
+                        सम्पर्क : 9880160270 <br>
+                        ईमेल : echakrapath@gmail.com <br>
+                        सूचना विभाग दर्ता नं: २१९९/०७७-७८ <br>
+                    </p>
+                </div>
+            </section>
+            <footer>
+                <p> © २००६-२०२० Chakrapath.Com सर्वाधिकार सुरक्षित</p>
+             </footer>
+        </div>
+    </div>
+</body>
